@@ -11,25 +11,10 @@ Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 
-# puts "creating cocktails"
+puts "creating cocktails"
 
-# 3.times do
-#   Cocktail.create(
-#     name: Faker::Hipster.words
-#   )
-# end
-
-# Ingredient.create(name: "lemon")
-# Ingredient.create(name: "ice")
-# Ingredient.create(name: "mint leaves")
-
-
-# 3.times do
-#   Dose.create(
-#     description: Faker::Food.measurement
-#   )
-# end
-
-#Faker::Food.ingredient #=> "Adzuki Beans"
-
-#Faker::Food.measurement #=> "1/4 tablespoon"
+3.times do
+   Cocktail.create(
+     name: Faker::Hipster.word
+   )
+end
