@@ -17,11 +17,12 @@ class CocktailsController < ApplicationController
       redirect_to cocktail_path(@cocktail)
     else
       render "new"
+    end
   end
-end
 
-private
+  private
 
-def restaurant_params
-  params.require(:cocktail).permit(:name)
+  def cocktail_params
+    params.require(:cocktail).permit(:name)
+  end
 end
