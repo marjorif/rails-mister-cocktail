@@ -6,15 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+puts "creating cocktails"
+
+3.times do
+  Cocktail.create(
+    name: Faker::Hipster.word,
+  )
+end
 
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 
-puts "creating cocktails"
-
-3.times do
-   Cocktail.create(
-     name: Faker::Hipster.word
-   )
-end
+puts "done"
